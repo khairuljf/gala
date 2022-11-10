@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #0059d6;
+  --primary-color-no-override: #0059d6;
+  --link-color-values: 0,123,173;
+  --link-color: rgb(var(--link-color-values));
+  --page-background-color: #000;
+  --info-color: #0a66e1;
+  --success-color: #0a8852;
+  --error-color: #d00e17;
+  --error-text-color: #fff;
+  --warning-color: #ffdb5f;
+  --button-font-color: #fff;
+  --widget-background-color: #fff;
+  --presentational-content-color: #6f7780;
+  --gray-lightest: #f1f2f3;
+  --gray-light: #dee2e6;
+  --gray-mid: #c2c8d0;
+  --gray-dark: #6f7780;
+  --gray-darkest: #2d333a;
+  --font-family: ulp-font,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,sans-serif;
+  --font-default-color: var(--gray-darkest);
+  --font-light-color: var(--gray-dark);
+  --small-font-size: 12px;
+  --default-font-size: 14px;
+  --font-default-weight: 400;
+  --font-bold-weight: 700;
+  --title-font-color: var(--gray-darkest);
+  --title-font-size: 24px;
+  --title-font-weight: var(--font-default-weight);
+  --base-line-height: 1.1;
+  --lg-font-size: 16px;
+  --logo-alignment: 0 auto;
+  --logo-height: 52px;
+  --header-alignment: center;
+  --page-background-alignment: center;
+
+}
+
+body {
+  background: #262620;
+  font-family: ulp-font, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+}
