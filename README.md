@@ -1,5 +1,5 @@
 
-<h2 align="center">webpack-sass-bootstrap-boilerplate</h2>
+<h2 align="center">GalaGames</h2>
 
 <p align="center">
   <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
