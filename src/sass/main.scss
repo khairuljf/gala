@@ -6,13 +6,49 @@
 @import "about";
 
 
+/*Extra css class */
+
+.pl-6 {
+  padding-left: 24px !important;
+}
+
+.gala-btn {
+  border-radius: 6px !important;
+  height: 2.5em;
+  min-width: fit-content;
+  text-align: center;
+  padding: 0 16px;
+  letter-spacing: .5px;
+  background: var(--v-accentBlue-base);
+  width: fit-content;
+}
+
+.gala-btn.full-width {
+  width: 100%;
+  padding: 0 12px;
+}
+
+.gala-btn.small {
+  border-radius: 4px !important;
+  height: 1.6em;
+  padding: 0 12px;
+}
+
 body {
   background-color: var(--v-secondary-base);
   font-size: 16px;
 }
 
-header{
-  nav{
+a{
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  nav {
     background-color: var(--v-accent-base) !important;
     border-color: var(--v-accent-base) !important;
   }
@@ -21,15 +57,79 @@ header{
 
 .footer {
   background: #383a45;
-  h5, a{
+
+  h5, a {
     color: #fff;
   }
-  .copyright{
-    ul{
+
+  .copyright {
+    ul {
       gap: 20px;
+
       li {
         color: var(--v-accentLight-darken2);
       }
     }
   }
+}
+
+
+#myCarousel {
+  .carousel-item {
+    height: 32rem;
+  }
+}
+
+.get-node_community {
+  h4 {
+    color: #fff;
+  }
+
+  .card {
+    border-color: var(--v-accent-base);
+    min-height: 210px;
+
+    .card-body {
+      background-color: var(--v-accent-base) !important;
+      border-color: var(--v-accent-base) !important;
+      color:#fff;
+
+      .background-check {
+        opacity: .61;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        overflow: hidden;
+        border-bottom-left-radius: 4px;
+
+        svg {
+          height: 280%;
+          position: absolute;
+          top: -10%;
+          left: -2px;
+          transform: scaleY(-1);
+
+          path {
+            stroke: rgb(43, 43, 48);
+            fill: rgb(43, 43, 48);
+          }
+        }
+      }
+
+      img {
+        max-width:210px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      a{
+        color:#fff;
+        border:none
+      }
+    }
+
+  }
+
 }
