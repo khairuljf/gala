@@ -12,6 +12,7 @@ module.exports = (env, options) => ({
   entry: ["./src/index.js"],
   devServer: {
     contentBase: "./dist",
+    historyApiFallback: true,
   },
   devtool: "source-map",
   module: {
