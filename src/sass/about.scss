@@ -1,0 +1,7 @@
+@forward "variables";
+@forward "fonts";
+@use "colros.css";
+
+body{
+    background-color: var(--v-secondary-base);
+}
