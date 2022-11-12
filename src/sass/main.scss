@@ -34,6 +34,11 @@
   padding: 0 12px;
 }
 
+.accentBlue--text {
+  color: var(--v-accentBlue-base) !important;
+  caret-color: var(--v-accentBlue-base) !important;
+}
+
 body {
   background-color: var(--v-secondary-base);
   font-size: 16px;
@@ -138,6 +143,7 @@ header {
    .view-all-panel{
      background: #161618;
      border-radius: 4px;
+     height: calc( 100% - 67px );
      cursor: pointer;
      span {
        display: flex;
@@ -151,17 +157,64 @@ header {
        width: 100%;
      }
    }
+  .trending-slider{
+    position: relative;
+    .carousel-game-container {
+      width: 95%;
+      aspect-ratio: 2/1.1;
+      background-size: cover;
+      background-position: 50%;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-end;
+      p {
+        font-size: 22px;
+        font-weight: 600;
+        padding-left: 9%;
+        padding-right: 9%;
+      }
+    }
+    .game-carousel-item-info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+       > div{
+         margin-right: 24px;
+         background: rgba(62,139,234,.15);
+         border-radius: 25px;
+         padding: 5px 10px;
+         display: flex;
+         align-items: center;
+         span {
+           color: #3e8bea!important;
+           font-size: 12px;
+           font-weight: 700;
+         }
+       }
+    }
+
+    .slick-next, .slick-prev{
+      z-index: 5;
+    }
+    .slick-next{
+      left: 40px;
+      bottom: -50px;
+      top: inherit;
+    }
+    .slick-prev{
+      left: 0;
+      bottom: -50px;
+      top: inherit;
+    }
+
+  }
 }
 
 
-.my-slider{
-  padding: 0 70px;
-}
 
 .slick-initialized .slick-slide{
-  background-color: #b32532;
   color: #FFF;
-  height: 200px;
   margin: 0 15px 0 0;
   display: flex;
   align-items: center;
@@ -169,16 +222,6 @@ header {
 }
 
 
-
-.slick-next, .slick-prev{
-  z-index: 5;
-}
-.slick-next{
-  right: 15px;
-}
-.slick-prev{
-  left: 15px;
-}
 .slick-next:before, .slick-prev:before{
   color: #000;
   font-size: 26px;
