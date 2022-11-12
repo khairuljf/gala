@@ -133,3 +133,22 @@ header {
   }
 
 }
+
+.tranding-game{
+   .view-all-panel{
+     background: #161618;
+     border-radius: 4px;
+     cursor: pointer;
+     span {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-right: 1%;
+       font-size: 40px;
+       font-weight: 600;
+       color: #848484;
+       height: 100%;
+       width: 100%;
+     }
+   }
+}
