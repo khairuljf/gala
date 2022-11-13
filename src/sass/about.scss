@@ -39,34 +39,30 @@ $small: 775px;
         }
     }
 }
-.principles{
-    background-color: var(--widget-background-color);
-    .page-title-holder {
-        position: relative;
-        top: 0;
-        left: calc(50% - 95px);
-        background-color: #268aef;
-        display: inline-block;
-        z-index: 4;
-        height: 40px;
-        width: 190px;
-        @media (min-width: 600px){
-            width: 285px;
-            height: 80px;
-            left: calc(50% - 140px);
-        }
-        .entry-title {
-            font-size: 16px!important;
-            line-height: 149%;
-            word-break: break-word;
-            letter-spacing: 2px;
-            font-weight: $font-weight-medium;
-            color: var(--v-textColor-base);
-        }
+.page-title-holder {
+    position: relative;
+    top: 0;
+    left: calc(50% - 95px);
+    background-color: #268aef;
+    display: inline-block;
+    z-index: 4;
+    height: 40px;
+    width: 190px;
+    @media (min-width: 600px){
+        width: 285px;
+        height: 80px;
+        left: calc(50% - 140px);
     }
-    
-    .page-title-holder:after, 
-    .page-title-holder:before {
+    .entry-title {
+        font-size: 16px!important;
+        line-height: 149%;
+        word-break: break-word;
+        letter-spacing: 2px;
+        font-weight: $font-weight-medium;
+        color: var(--v-textColor-base);
+    }
+    :after,
+    :before{
         content: "";
         width: 0;
         height: 0;
@@ -76,7 +72,7 @@ $small: 775px;
         position: absolute;
         top: 0;
     }
-    .page-title-holder:before {
+    :before {
         left: -30px;
         transform: rotate(.5turn);
         @media (min-width: 600px){
@@ -84,13 +80,17 @@ $small: 775px;
             left: -60px;
         }
     }
-    .page-title-holder:after{
+    :after{
         right: 0;
         transform: translateX(100%);
-            @media (min-width: 600px){
-                border-width: 80px 60px 0 0;
+        @media (min-width: 600px){
+            border-width: 80px 60px 0 0;
         }
     }
+}
+
+.principles{
+    background-color: var(--widget-background-color);
     .principle-container{
         padding-top: 150px;
         @media (min-width: 964px){
@@ -99,3 +99,202 @@ $small: 775px;
         }
     }
 }
+.milestones, 
+.quotes, 
+.team {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+@media (min-width: 964px){
+    .milestones, .quotes {
+        padding-top: 200px;
+        padding-bottom: 115px;
+    }
+}
+
+.globe-section{
+    background-color: rgb(0, 130, 228);
+}
+/*========News==========*/
+.news{
+    background-color: #fff;
+}
+/*========milestones==========*/
+.milestones {
+    background-color: #fff;
+}
+
+/*========Game Part CSS==========*/
+.game{
+    .about-us-games{
+        section{
+            .hooper-list{
+                .hooper-track{
+                    display: flex;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    .hooper-slide {
+                        flex-shrink: 0;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.game{
+    .page-title-holder{
+        position: absolute;
+        top: unset;
+    }
+    .about-us-games{
+        .hooper{
+            .hooper-list{
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                .hooper-track{
+                    display: flex;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    .hooper-slide {
+                        flex-shrink: 0;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        .game-container{
+                            position: relative;
+                            &:after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 25%;
+                                background-color: #000;
+                                left: 0;
+                                bottom: 0;
+                                opacity: .7;
+                                transition: opacity .3s ease-in-out;
+                                @media (max-width: 1800px){
+                                    height: 35%;
+                                }
+                            }
+                            a{
+                                img{
+                                    width: 100%!important;
+                                    height: auto;
+                                    display: block;
+                                }
+                            }
+                            .portfolio-text-holder {
+                                color: #fff;
+                                position: absolute;
+                                bottom: 20px;
+                                left: 50px;
+                                display: inline-block;
+                                z-index: 1;
+                                transition: all .3s ease;
+                                .portfolio-desc {
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    color: #b3b3b3;
+                                    letter-spacing: 2px;
+                                    margin-bottom: 0;
+                                    margin-right: 10px;
+                                }
+                                .portfolio-title {
+                                    font-size: 30px;
+                                    line-height: 140%;
+                                    margin-bottom: 0;
+                                    margin-top: 2px;
+                                    margin-right: 10px;
+                                    font-weight: 700;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        } 
+    }
+}
+
+// .hooper-track{
+//     display: flex;
+//     box-sizing: border-box;
+//     width: 100%;
+//     height: 100%;
+//     padding: 0;
+//     margin: 0;
+//     .hooper-slide {
+//         flex-shrink: 0;
+//         height: 100%;
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         .game-container{
+//             position: relative;
+//             &:after{
+//                 content: "";
+//                 display: block;
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 25%;
+//                 background-color: #000;
+//                 left: 0;
+//                 bottom: 0;
+//                 opacity: .7;
+//                 transition: opacity .3s ease-in-out;
+//                 @media (max-width: 1800px){
+//                     height: 35%;
+//                 }
+//             }
+//             a{
+//                 img{
+//                     width: 100%!important;
+//                     height: auto;
+//                     display: block;
+//                 }
+//             }
+//             .portfolio-text-holder {
+//                 color: #fff;
+//                 position: absolute;
+//                 bottom: 20px;
+//                 left: 50px;
+//                 display: inline-block;
+//                 z-index: 1;
+//                 transition: all .3s ease;
+//                 .portfolio-desc {
+//                     font-size: 14px;
+//                     line-height: 22px;
+//                     color: #b3b3b3;
+//                     letter-spacing: 2px;
+//                     margin-bottom: 0;
+//                     margin-right: 10px;
+//                 }
+//                 .portfolio-title {
+//                     font-size: 30px;
+//                     line-height: 140%;
+//                     margin-bottom: 0;
+//                     margin-top: 2px;
+//                     margin-right: 10px;
+//                     font-weight: 700;
+//                     color: #fff;
+//                 }
+//             }
+//         }
+        
+//     }
+// }
