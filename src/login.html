@@ -9,7 +9,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,17 +18,35 @@
 <!-- Start main section -->
 <div class="main">
 
-    <div class="card login" style="width: 18rem;">
-        <div class="card-header">
-            <img class="cd2f0f7de c5a27fb77" id="prompt-logo-center" src="https://app.gala.games/android-chrome-512x512.png" alt="Gala">
-            <h1>Welcome</h1>
-            <p>Log in to Gala to continue to Gala Games.
-            </p>
-        </div>
-        <div class="card-body login-form">
-            <form action="">
 
-            </form>
+    <div class="container h-100vh p-5">
+        <div class="align-items-center d-flex h-100vh justify-content-center login-wrap row">
+
+            <div class="card login" >
+                <div class="card-header">
+                    <img class="cd2f0f7de c5a27fb77" id="prompt-logo-center"
+                         src="https://app.gala.games/android-chrome-512x512.png" alt="Gala">
+                    <h1>Welcome</h1>
+                    <p>Log in to Gala to continue to Gala Games.
+                    </p>
+                </div>
+                <div class="card-body login-form">
+                    <form name="signin" class="form">
+                        <div class="input-control">
+                            <label for="email" class="input-label" hidden>Email Address</label>
+                            <input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+                        </div>
+                        <div class="input-control">
+                            <label for="password" class="input-label" hidden>Password</label>
+                            <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                        </div>
+                        <div class="input-control">
+                            <a href="#" class="text text-links">Forgot Password</a>
+                            <input type="submit" name="submit" class="input-submit" value="Sign In" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
