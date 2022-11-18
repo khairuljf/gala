@@ -1,0 +1,31 @@
+
+
+.main{
+  min-height: 100vh;
+  padding: var(--outer-padding);
+
+  .login{
+    position: relative;
+    width: var(--prompt-width);
+    .card-header{
+       img{
+         display: block;
+         -o-object-fit: contain;
+         object-fit: contain;
+         max-height: 52px;
+         max-height: var(--logo-height);
+         max-width: 100%;
+       }
+
+      h1{
+        font-size: 24px;
+        font-size: var(--title-font-size);
+        font-weight: 400;
+        font-weight: var(--title-font-weight);
+        letter-spacing: 0;
+        color: #2d333a;
+        color: var(--title-font-color);
+      }
+    }
+  }
+}
