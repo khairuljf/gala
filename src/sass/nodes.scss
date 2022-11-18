@@ -1,0 +1,275 @@
+.blue-hero {
+    background-image: linear-gradient(285deg,#28def7,#137cdf);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .gala-nodes-header-title{
+        font-weight: 400!important;
+        font-size: 50px!important;
+        margin-bottom: 5px;
+        color: var(--v-textColor-base);
+    }
+    .gala-nodes-header-text{
+        font-size: 16px;
+        color: var(--v-textColor-base);
+    }
+    .hero-image-container{
+        position: relative;
+        max-width: 460px;
+        .background-check{
+            opacity: .5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            .hero-bg-check{
+                height: 150%;
+                position: absolute;
+                bottom: -17%;
+                left: 0;
+            }
+        }
+        .hero-image {
+            z-index: 1;
+            .chart-container{
+                position: relative;
+                .gala-chart{
+                    position: relative;
+                    z-index: 2;
+                    .chartjs-size-monitor{
+                        position: absolute;
+                        direction: ltr;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        overflow: hidden;
+                        pointer-events: none;
+                        visibility: hidden;
+                        z-index: -1;
+                        .chartjs-size-monitor-expand{
+                            position: absolute;
+                            direction: ltr;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            overflow: hidden;
+                            pointer-events: none;
+                            visibility: hidden;
+                            z-index: -1;
+                        }
+                        .chartjs-size-monitor-shrink{
+                            position: absolute;
+                            direction: ltr;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            overflow: hidden;
+                            pointer-events: none;
+                            visibility: hidden;
+                            z-index: -1;
+                        }
+                        .chartjs-render-monitor {
+                            animation: chartjs-render-animation 0.001s; 
+                        }
+                    }
+                }
+                .gala-chart-bg{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: var(--v-accentBlueDark-base);
+                    border: 6px solid var(--v-accent3-base);
+                    border-radius: 50%;
+                    border-width: 10px;
+                    img{
+                        width: 40%;
+                        height: auto;
+                        padding-bottom: 4px; 
+                    }
+                    .gala-nodes-header-count{
+                        font-weight: 700;
+                        font-size: 22px;
+                        color: var(--v-textColor-base);
+                    }
+                    .gala-nodes-header-total{
+                        width: 110px;
+                        color: #758391;
+                        margin-bottom: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.get-founders-node-panel{
+    background: var(--v-secondary-base);
+    .laptop-image-container{
+        z-index: 9;
+        img{
+            width: 100%;
+            margin-top: -50px;
+        }
+    }
+    .founders-node-text{
+        max-width: 450px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        h3{
+            font-size: 30px;
+            font-weight: $font-weight-bold;
+            color: var(--v-textColor-base);
+        }
+        p{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: var(--v-textColor-base);
+        }
+        button{
+            border-radius: 6px!important;
+            min-width: -webkit-fit-content;
+            min-width: -moz-fit-content;
+            min-width: fit-content;
+            text-align: center;
+            padding: 13px 16px;
+            height: unset;
+            letter-spacing: .5px;
+            color: var(--v-textColor-base);
+            background: var(--v-accentBlue-base);
+            font-weight: $font-weight-bold;
+            border: none;
+        }
+        .buy-now-button{
+            width: 200px;
+        }
+        .learn-more-button{
+            background: unset;
+            border: 1px solid white;
+        }
+    }
+}
+
+.distribution-results-panel{
+    background: var(--page-background-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .distribution-results-container{
+        padding-left: 4.16667vw;
+        padding-right: 4.16667vw;
+        .distribution-header{
+            margin-bottom: 20px;
+            h3{
+                font-size: 24px;
+                font-weight: $font-weight-bold;
+                color: var(--v-textColor-base);
+            }
+            a{
+                font-size: 18px;
+                color: var(--v-accentBlue-base);
+                text-transform: uppercase;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+    .distribution-results-card{
+        border: 2px solid #1c1c1c;
+        .distribution-icon-container{
+            background: #1c1c1c;
+            border-top-left-radius: inherit;
+            border-bottom-left-radius: inherit;
+            margin-right: 8px;
+            .circle-icon-container{
+                width: 50px;
+                height: 50px;
+                padding: 8px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                background: var(--v-accentBlueDark-base);
+                margin: 10px;
+                @media(min-width: 600px){
+                    width: 90px;
+                    height: 90px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        p{
+            font-size: 20px;
+            color: var(--v-textColor-base);
+        }
+    }
+}
+
+.game-nodes-container{
+    padding-bottom: 40px;
+    h3{
+        font-size: 30px;
+        font-weight: $font-weight-bold;
+        color: var(--v-textColor-base);
+        margin-bottom: 30px;
+    }
+    .game-node-container{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .game-node-panel-content{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            bottom: 12%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+            max-width: 400px;
+            font-size: 18px;
+            p{
+                text-align: center;
+                color: var(--v-textColor-base);
+                font-weight: $font-weight-medium;
+                margin-bottom: 16px;
+                font-size: 18px;
+            }
+            .game-node-buttons {
+                button{
+                    border-radius: 6px !important;
+                    height: unset;
+                    min-width: -moz-fit-content;
+                    text-align: center;
+                    padding: 8px 16px;
+                    letter-spacing: 0.5px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: var(--v-textColor-base);
+                    font-weight: $font-weight-bold;
+                    color: var(--v-textColor-base);
+                    border: none;
+                    width: 200px;
+                    &.game-node-cta-btn{
+                        margin-right: 20px;
+                    }
+                }
+                a{
+                    .game-node-info-btn{
+                        background: unset;
+                        border: 1px solid var(--v-textColor-base);
+                    }
+                }
+            }
+                
+        }
+    }
+}
