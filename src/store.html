@@ -48,7 +48,9 @@
                         <a class="nav-link " href="#">Join Discord</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Register</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Register
+                </button>
                 <button class="btn btn-info my-2 my-sm-0" type="submit">Login</button>
             </div>
         </div>
@@ -102,12 +104,13 @@
     <section class="filter-items recent-drop mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-lg-3 col g-0 accent" >
+                <div class="col-md-4 col-lg-3 col g-0 accent">
                     <div class="row g-0">
                         <div class="left-filter accordion accordion-flush p-3" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header " id="flush-headingOne">
-                                    <button class="accordion-button accentBlue--text collapsed px-0" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button accentBlue--text collapsed px-0" type="button"
+                                            data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseOne" aria-expanded="false"
                                             aria-controls="flush-collapseOne">
                                         Accordion Item #1
@@ -150,7 +153,8 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header " id="flush-headingTwo">
-                                    <button class="accordion-button accentBlue--text collapsed px-0" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button accentBlue--text collapsed px-0" type="button"
+                                            data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                             aria-controls="flush-collapseOne">
                                         Accordion Item #1
@@ -392,7 +396,68 @@
 <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 <script src="assets/js/script.js"></script>
 
+
+<!-- Modal -->
+<div class="modal fade h-100vh" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="d-flex align-items-center justify-content-center modal-dialog h-100vh">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create your Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form name="signin" class="form registration">
+                    <div class="input-control">
+                        <label for="email" class="input-label" hidden>Email Address</label>
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+                    </div>
+
+                    <div class="input-control">
+                        <label for="email" class="input-label" hidden>Display Name</label>
+                        <input type="email" name="email" id="name" class="input-field" placeholder="Display Name">
+                    </div>
+
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Password</label>
+                        <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                    </div>
+
+                    <div class="input-control">
+                        <label for="email" class="input-label" hidden>Display Name</label>
+                        <input type="email" name="email" id="reference" class="input-field"
+                               placeholder="Referral Code (Optional)">
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="agree">
+                        <label class="form-check-label" for="agree">
+                            I have read and agree to the Terms of Service and Privacy Policy.
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="news">
+                        <label class="form-check-label" for="news">
+
+                            I would like to receive news, offers and promotional materials from Gala Games.
+                        </label>
+                    </div>
+
+                    <div class="input-control">
+                        <div></div>
+                        <input type="submit" name="submit" class="input-submit" value="Create Account" disabled>
+                    </div>
+                </form>
+
+                <p class="text-center mt-6">
+                    Already a member?
+                    <a href="#" class="text-dark">
+                        Sign In
+                    </a></p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
 </html>
