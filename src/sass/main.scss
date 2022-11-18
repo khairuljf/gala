@@ -28,6 +28,11 @@
   border-color: var(--v-accent-base) !important;
 }
 
+.accentBlue--text {
+  color: var(--v-accentBlue-base) !important;
+  caret-color: var(--v-accentBlue-base) !important;
+}
+
 .accent3 {
   background-color: #fff;
 }
@@ -344,6 +349,56 @@ header {
     }
   }
   h6{
+
+  }
+}
+
+
+/*Store page design*/
+
+.main-filter{
+  select {
+    min-width: 200px;
+    padding: 4px 16px;
+    cursor: pointer;
+    border: 1px solid var(--v-accentBlue-base);
+    background: var(--v-accent-base);
+    color: var(--v-accentBlue-base) !important;
+    caret-color: var(--v-accentBlue-base) !important;
+
+  }
+}
+
+.filter-items{
+  .left-filter{
+    .accordion-item{
+      background-color: transparent;
+      .accordion-header{
+          button{
+            background-color: transparent;
+          }
+
+      }
+      .accordian-content{
+        ul li {
+          padding: 8px 0;
+          a {
+            gap:10px;
+            img{
+              height: 48px;
+              min-width: 48px;
+              width: 48px;
+            }
+
+            p{
+
+            }
+          }
+        }
+      }
+
+
+    }
 
   }
 }
