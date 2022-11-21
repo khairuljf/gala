@@ -74,49 +74,54 @@
 
     <section class="main-filter my-4">
         <div class="container">
-            <div class="row d-flex accent p-4">
-                <div class="currency-filter-selector w-auto">
-                    <select name="">
-                        <option value="">All</option>
-                        <option value="">MTRM</option>
-                        <option value="">GALA</option>
-                        <option value="">TOWN</option>
-                        <option value="">ETH</option>
-                        <option value="">Credit Card</option>
-                    </select>
+            <div class="row  accent p-4 justify-content-between" >
+                <div class="col w-auto d-flex">
+                    <div class="currency-filter-selector w-auto me-3">
+                        <select name="">
+                            <option value="">All</option>
+                            <option value="">MTRM</option>
+                            <option value="">GALA</option>
+                            <option value="">TOWN</option>
+                            <option value="">ETH</option>
+                            <option value="">Credit Card</option>
+                        </select>
+                    </div>
+                    <div class="sort-by w-auto">
+                        <select name="">
+                            <option value="">Popularity</option>
+                            <option value="">Price: Low to High</option>
+                            <option value="">Price: High to Low</option>
+                            <option value="">Newest Arrivals</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="sort-by w-auto">
-                    <select name="">
-                        <option value="">Popularity</option>
-                        <option value="">Price: Low to High</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Newest Arrivals</option>
-                    </select>
+                <div class="col d-flex justify-content-end">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
                 </div>
-                <!--                <div class="col">-->
-                <!--                  -->
-                <!--                </div>-->
 
             </div>
         </div>
     </section>
 
-    <section class="filter-items recent-drop mb-5">
+    <section class="filter-items games recent-drop mb-5">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4 col-lg-3 col g-0 accent">
                     <div class="row g-0">
-                        <div class="left-filter accordion accordion-flush p-3" id="accordionFlushExample">
+                        <div class="left-filter accordion accordion-flush " id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header " id="flush-headingOne">
-                                    <button class="accordion-button accentBlue--text collapsed px-0" type="button"
+                                    <button class="accordion-button accentBlue--text  p-3" type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseOne" aria-expanded="false"
                                             aria-controls="flush-collapseOne">
-                                        Accordion Item #1
+                                        Games
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordian-content accordion-collapse collapse"
+                                <div id="flush-collapseOne" class="p-3 accordian-content accordion-collapse collapse show"
                                      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <ul class="list-unstyled">
                                         <li>
@@ -153,45 +158,51 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header " id="flush-headingTwo">
-                                    <button class="accordion-button accentBlue--text collapsed px-0" type="button"
+                                    <button class="accordion-button accentBlue--text  p-3" type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                             aria-controls="flush-collapseOne">
-                                        Accordion Item #1
+                                        Rarity
                                     </button>
                                 </h2>
-                                <div id="flush-collapseTwo" class="accordian-content accordion-collapse collapse"
+                                <div id="flush-collapseTwo" class="p-3 accordian-content accordion-collapse collapse show"
                                      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled custom-checkbox-list">
                                         <li>
-                                            <a href="#" class="d-flex align-items-center ">
-                                                <img src="https://cdn.sanity.io/images/j6di4pid/production/b4a415bf74f952904c52f4054c2a7669c3bafefe-256x256.png"
-                                                     alt="Eternal Paradox">
-                                                <p class="mb-0 fs-18"> Eternal Paradox </p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-flex align-items-center ">
-                                                <img src="https://cdn.sanity.io/images/j6di4pid/production/b4a415bf74f952904c52f4054c2a7669c3bafefe-256x256.png"
-                                                     alt="Eternal Paradox">
-                                                <p class="mb-0 fs-18"> Eternal Paradox </p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-flex align-items-center ">
-                                                <img src="https://cdn.sanity.io/images/j6di4pid/production/b4a415bf74f952904c52f4054c2a7669c3bafefe-256x256.png"
-                                                     alt="Eternal Paradox">
-                                                <p class="mb-0 fs-18"> Eternal Paradox </p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="d-flex align-items-center ">
-                                                <img src="https://cdn.sanity.io/images/j6di4pid/production/b4a415bf74f952904c52f4054c2a7669c3bafefe-256x256.png"
-                                                     alt="Eternal Paradox">
-                                                <p class="mb-0 fs-18"> Eternal Paradox </p>
-                                            </a>
-                                        </li>
+                                            <label class="custom-checkbox">Common
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
 
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">Common
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">Common
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">Common
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">Common
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
