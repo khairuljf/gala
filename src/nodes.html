@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Nodes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Get GALA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Join Discord</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Register</button>
+                    <button class="btn btn-info my-2 my-sm-0" type="submit">Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="main" style="min-height: 200px">
+    <div class="nodes_main_wrap">
+        <!-- Gala Nodes Banner -->
+        <div class="flex blue-hero shrink mt-4 p-5">
+            <!---->
+            <div class="row mx-auto content-container">
+              <div class="col-sm-6 col-6 d-flex flex-column justify-center first-col pa-0 pl-4 py-8">
+                <h1 class="gala-nodes-header-title">Gala Nodes</h1>
+                <div>
+                  <p class="gala-nodes-header-text medium-font mt-4 mb-6" style="max-width: 380px;"> Open up opportunities to receive rewards like GALA, limited edition NFT's and the chance to help the Gala Games ecosystem grow. </p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-6 pa-0 d-flex justify-content-center hero-image-container py-8">
+                <div class="background-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="background-check-svg hero-bg-check">
+                    <path stroke-width="1" d="M1,1 V199 H57 L299,1 h-63 L40,155 V1z" style="stroke: rgb(37, 215, 248); fill: rgb(37, 215, 248);"></path>
+                  </svg>
+                </div>
+                <!---->
+                <div class="float-right d-flex flex-column align-items-center hero-image my-1">
+                  <div class="chart-container mx-auto" style="width: 270px; height: 270px;">
+                    <div class="gala-chart" style="width: 270px; height: 270px;">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <canvas id="doughnut-chart" width="270" height="270" style="display: block; width: 270px; height: 270px;" class="chartjs-render-monitor"></canvas>
+                    </div>
+                    <div class="gala-chart-bg d-flex flex-column justify-content-center align-items-center py-1">
+                      <img  src="../src/assets/img/icon_gala_cube.a0b796d.png" alt="GALA cube">
+                      <p class="gala-nodes-header-count mb-0 white--text">
+                        <span> 0 </span>
+                      </p>
+                      <p class="gala-nodes-header-total text-center"> Total GALA Earned Nov 19th </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Gala Nodes Founder's -->
+        <div class="layout content-container get-founders-node-panel row">
+            <div class="col-6 laptop-image-container">
+                <img src="../src/assets/img/open-laptop.png" alt="Open Laptop">
+            </div>
+            <div class="col-6 layout founders-node-text">
+                <h3 class="mt-6" style="font-size: 30px !important;"> Get a Founder's Node Today </h3>
+                <p> The Gala Network is supported by users, just like you, who operate Gala Nodes from their home computers. By buying a license to operate a Gala Node, you open up opportunities to receive rewards for your contribution to the network. </p>
+                <p> This can include GALA, limited edition NFTs, and opportunities to help the Gala Games ecosystem grow. Have any questions? </p>
+                <a target="_blank" href="http://galagames.chat/" rel="noreferer, ,noopener"> Chat with us on Discord. </a>
+                <div class="row get-founders-node-buttons mt-4">
+                    <div class="pb-0 col">
+                        <button class="gala-btn buy-now-button px-5"> Buy Now </button>
+                    </div>
+                    <div class="pb-0 col">
+                        <button class="learn-more-button gala-btn outline clear light mr-2 px-5"> Learn More </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Distribution Result Pannel-->
+        <div class="layout distribution-results-panel justify-space-between align-center">
+            <div class="layout distribution-results-container content-container column">
+                <div class="distribution-header d-flex align-items-center justify-content-between">
+                    <h3 class="pr-3"> Global Distribution Results - Nov 19th </h3>
+                    <a href="/distribution?date=1668815999999&amp;tokenType=gala" class="accentBlue--text text-uppercase fs-18 font-weight-medium view-link"> View </a>
+                </div>
+                <div class="layout">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 col-12">
+                            <div class="distribution-results-card d-flex justify-content-between align-items-center v-card v-sheet theme--dark">
+                                <div class="d-flex align-items-center">
+                                    <div class="distribution-icon-container">
+                                        <div class="circle-icon-container mr-4">
+                                            <img src="../src/assets/img/icon_gala_cube.a0b796.png" alt="GALA">
+                                        </div>
+                                    </div>
+                                    <p class="mb-0"> 0 GALA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-12">
+                            <div class="distribution-results-card d-flex justify-space-between align-items-center v-card v-sheet theme--dark">
+                                <div class="d-flex align-items-center">
+                                    <div class="distribution-icon-container">
+                                        <div class="circle-icon-container mr-4">
+                                            <img src="../src/assets/img/icon_node_fire.d23b70c.png" alt="fire">
+                                        </div>
+                                    </div>
+                                    <p class="mb-0"> 0 points </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-12">
+                            <div class="distribution-results-card d-flex justify-space-between align-items-center v-card v-sheet theme--dark">
+                                <div class="d-flex align-items-center">
+                                    <div class="distribution-icon-container">
+                                        <div class="circle-icon-container mr-4">
+                                            <img src="../src/assets/img/icon_node_rare_items.789aa90.png" alt="ribbon">
+                                        </div>
+                                    </div>
+                                    <p class="mb-0"> 0 items </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-12">
+                            <div class="distribution-results-card d-flex justify-space-between align-items-center v-card v-sheet theme--dark">
+                                <div class="d-flex align-items-center">
+                                    <div class="distribution-icon-container">
+                                        <div class="circle-icon-container mr-4 d-flex justify-center align-items-center">
+                                            <img src="../src/assets/img/icon_onlineStatus.30228c7.png" alt="beacon">
+                                        </div>
+                                    </div>
+                                    <p class="mb-0"> 35,171 nodes online now </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Games Nodes -->
+        <div class="content-container game-nodes-container">
+            <h3 class="mt-5"> Game Nodes </h3>
+                <div class="game-node-container">
+                    <img src="../src/assets/img/ST_Node_Bundle_Wide.png" class="game-node-panel-image">
+                    <div class="game-node-panel-content">
+                        <p> Support Spider Tanks ecosystem to run the Planetary Node. Planetary Node will come with a Node depot space. </p>
+                        <div class="game-node-buttons d-flex align-items-center justify-content-between">
+                            <button class="gala-btn game-node-cta-btn"> Get a Node </button>
+                            <a href="/nodes/spider-tanks-planetary-node" target="_blank">
+                                <button href="/nodes/spider-tanks-planetary-node" class="btn gala-btn outline clear game-node-info-btn"> More Info </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+</div>
+<!-- Footer Content -->
+<footer class="footer p-3">
+    <div class="container-fluid px-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col-6 col-md">
+                        <h5>HELP</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="" href="#">FAQs</a></li>
+                            <li><a class="" href="#">Contact Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>ABOUT</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="" href="#">About Us</a></li>
+                            <li><a class="" href="#">Careers</a></li>
+                            <li><a class="" href="#">News</a></li>
+                            <li><a class="" href="#">Environmental Impact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>GALA COIN</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="" href="#">Get GALA</a></li>
+                            <li><a class="" href="#">Smart Contract</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-12 col-md-2">
+                <div class="col-6 col-md">
+                    <h5>Join Our Community</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="" href="#"></a></li>
+                        <li><a class="" href="#"><span class="fas-solid fa-user"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=" mt-4 row copyright justify-content-between">
+            <div class="col">
+                <ul class="list-unstyled text-small list-inline d-flex">
+                    <li>© 2021 Gala Games</li>
+                    <li><a class="text-muted" href="#"> Terms and Conditions </a></li>
+                    <li><a class="text-muted" href="#">Privacy Policy</a></li>
+                    <li><a class="text-muted" href="#">Privacy Settings</a></li>
+                    <li><a class="text-muted" href="#">Launcher EULA</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-2 text-right">
+                <p>Language</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+</html>
