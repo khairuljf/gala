@@ -10,4 +10,74 @@
         width: 100%;
         height: 100%;
     }
+    .get_gala_content{
+        h3{
+            color: var(--v-textColor-base);
+            font-size: 24px;
+        }
+        .get-gala-image{
+            width: 230px;
+            height: auto;
+        }
+        h4{
+            color: var(--v-textColor-base);
+            font-weight: 700!important;
+            font-size: 22px!important;
+        }
+        p{
+            color: var(--v-textColor-base);
+            font-size: 16px;
+        }
+        .top_btn{
+            height: 2.6em;
+            font-size: 20px;
+            padding: 0 24px;
+            border: 1px solid var(--v-textColor-base);
+            color: var(--v-textColor-base)!important;
+            background: transparent;
+        }
+        .logo_content{
+            .accentBlueDark{
+                background-color: var(--v-accentBlueDark-base) !important;
+                border-color: var(--v-accentBlueDark-base) !important;
+                img{
+                    height: 40px;
+                }
+                button{
+                    min-width: 223px;
+                    border: 1px solid var(--v-textColor-base);
+                    color: var(--v-textColor-base)!important;
+                    background-color: transparent;
+                    border-radius: 6px!important;
+                    height: 2.5em;
+                    text-align: center;
+                    padding: 0 16px;
+                    letter-spacing: .5px;
+                    font-weight: 700!important;
+                }
+            }
+        }
+        .bottom_content{
+            h3{
+                font-size: 24px!important;
+                font-weight: 700!important;
+                color: var(--v-textColor-base);
+            }
+            .accentBlueDark {
+                background-color: var(--v-accentBlueDark-base) !important;
+                border-color: var(--v-accentBlueDark-base) !important;
+                
+            }
+            button{
+                color: var(--v-textColor-base)!important;
+                border-radius: 6px!important;
+                height: 2.5em;
+                text-align: center;
+                padding: 0 16px;
+                letter-spacing: .5px;
+                background: var(--v-accentBlue-base);
+                font-weight: 700!important;
+            }
+        }
+    }
 }
