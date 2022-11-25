@@ -54,24 +54,95 @@
                 </div>
             </nav>
         </header>
-        <section class="contact">
-            <div class="content-container">
-                <form name="signin" class="form">
-                    <div class="input-control">
-                        <label for="email" class="input-label" hidden="">Email Address</label>
-                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+        <div class="main">
+            <div class="flex blue-hero shrink mt-4 p-5">
+                <!---->
+                <div class="row mx-auto content-container">
+                  <div class="col-sm-6 col-6 d-flex flex-column justify-center first-col pa-0 pl-4 py-8">
+                    <h1 class="gala-nodes-header-title">Contact Support</h1>
+                  </div>
+                  <div class="col-sm-6 col-6 pa-0 d-flex justify-content-center hero-image-container py-8">
+                    <div class="background-check">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="background-check-svg hero-bg-check">
+                        <path stroke-width="1" d="M1,1 V199 H57 L299,1 h-63 L40,155 V1z" style="stroke: rgb(37, 215, 248); fill: rgb(37, 215, 248);"></path>
+                      </svg>
                     </div>
-                    <div class="input-control">
-                        <label for="password" class="input-label" hidden="">Password</label>
-                        <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                    <!---->
+                    <div class="float-right d-flex flex-column align-items-center hero-image my-1">
+                      <div class="chart-container mx-auto" style="width: 270px; height: 270px;">
+                        <div class="gala-chart" style="width: 270px; height: 270px;">
+                          <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                              <div class=""></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                              <div class=""></div>
+                            </div>
+                          </div>
+                          <canvas id="doughnut-chart" width="270" height="270" style="display: block; width: 270px; height: 270px;" class="chartjs-render-monitor"></canvas>
+                        </div>
+                      </div>
                     </div>
-                    <div class="input-control">
-                        <a href="#" class="text text-links">Forgot Password</a>
-                        <input type="submit" name="submit" class="input-submit" value="Sign In" disabled="">
-                    </div>
-                </form>
+                  </div>
+                </div>
             </div>
-        </section>
+            <section class="contact">
+                <div class="content-container">
+                    <div class="contact_form mt-5 p-5">
+                        <form name="signin" class="form">
+                            <div class="input-control">
+                                <label for="name" class="input-label" hidden="">Name<span>*</span></label>
+                                <input type="text" name="name" id="name" class="input-field">
+                            </div>
+                            <div class="input-control">
+                                <label for="email" class="input-label" hidden="">Email<span>*</span></label>
+                                <input type="email" name="email" id="email" class="input-field">
+                            </div>
+                            <div class="input-control">
+                                <label for="address" class="input-label" hidden="">GALA address (if account holder)</label>
+                                <input type="text" name="address" id="address" class="input-field">
+                            </div>
+                            <div class="input-control">
+                                <label for="discord" class="input-label" hidden="">Discord Handle</label>
+                                <input type="text" name="discord" id="discord" class="input-field">
+                            </div>
+                            <div class="input-control">
+                                <label for="type" class="input-label" hidden="">Type<span>*</span></label>
+                                <select name="type" id="type">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="input-control">
+                                <label for="subtype" class="input-label" hidden="">Subtype<span>*</span></label>
+                                <select name="subtype" id="subtype">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="input-control">
+                                <label for="item" class="input-label" hidden="">Item<span>*</span></label>
+                                <select name="item" id="item">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="input-control">
+                                <label for="description" class="input-label" hidden="">Description<span>*</span></label>
+                                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                            </div>
+                            <button type="submit" class="submit_btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
         <footer class="footer p-3">
             <div class="container-fluid px-5">
                 <div class="row d-flex justify-content-between">
