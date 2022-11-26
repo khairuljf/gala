@@ -1,0 +1,39 @@
+.social_content{
+    h3{
+        font-size: 24px;
+        font-weight: $font-weight-bold;
+        color: var(--v-textColor-base);
+    }
+    p{
+        color: var(--v-textColor-base);
+        font-size: 16px;
+    }
+    .accentBlueDark{
+        background-color: var(--v-accentBlueDark-base);
+        border-color: var(--v-accentBlueDark-base);
+        padding: 24px;
+        .discord-widget-logo {
+            width: 100%;
+            max-height: 130px;
+            object-fit: contain;
+        }
+        .discord-socialpics {
+            width: 90%;
+            max-width: 112px;
+        }
+    }
+    button{
+        background-color: var(--v-accentBlue-base);
+        border: unset;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        color: var(--v-textColor-base);
+        padding: 8px 16px;
+        font-weight: $font-weight-bold;
+        letter-spacing: .5px;
+        min-width: 160px;
+    }
+}
