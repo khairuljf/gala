@@ -62,23 +62,20 @@
 
     <div class="container my-5 account">
         <div class="row">
+            <h1 class="mb-2 mt-3 text-light" style="font-size: 24px; font-weight: 700">Settings</h1>
             <div class="col-md-4 col-lg-3 col">
                 <nav class="accent rounded">
                     <p class="ps-3 pt-2 modalBackground--text fs-18 font-weight-bold">Account</p>
                     <hr>
-                    <ul class="list-group nav nav-tabs" id="accout" role="tablist">
+                    <ul class="list-group nav nav-tabs" id="account" role="tablist">
 
 
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" data-bs-toggle="pill"  data-bs-target="#profile-picture"
-                                    type="button">Profile Picture
-                            </button>
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile-picture" type="button" role="tab" aria-controls="home" aria-selected="true">Profile Picture</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link "  data-bs-toggle="pill" data-bs-target="#display-name" >
-                                Display Name
-                            </button>
+                            <button class="nav-link" id="d-tab" data-bs-toggle="tab" data-bs-target="#display-name" type="button" role="tab" aria-controls="home" aria-selected="true">Display Name</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link "  data-bs-toggle="tab"
@@ -87,7 +84,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link " id="email" data-bs-toggle="pill" data-bs-target="#email"
+                            <button class="nav-link " id="email-t" data-bs-toggle="pill" data-bs-target="#email"
                                     type="button">
                                 Email
                             </button>
@@ -186,16 +183,122 @@
             <div class="col-md-8 col-lg-9 col">
                 <div class="tab-content-wrap accent rounded p-4 h-100">
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="profile-picture" >
-                            <h3>Khairul islam</h3>
-                            
+                        <div class="tab-pane fade show active" id="profile-picture" role="tabpanel" aria-labelledby="home-tab">
+                           <div class="profile-wrap d-flex align-items-center flex-column">
+                               <h3 class="text-light mb-3">Khairul islam</h3>
+                               <div class="profile-thumb mb-3">
+                                   <img src="https://www.pngitem.com/pimgs/m/22-223968_default-profile-picture-circle-hd-png-download.png" class="img-fluid"  alt="profile picture">
+                               </div>
+                               <button class="py-2 px-4 rounded btn-secondary">Change Pic</button>
+                           </div>
                         </div>
-                        <div class="tab-pane fade" id="display-name" >Dispaly Name</div>
-                        <div class="tab-pane fade" id="account-password" >profile asdfasd</div>
+
+                        <div class="tab-pane fade" id="display-name" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="content-wrap">
+                                <h2 class="text-light mb-3"> Display Name </h2>
+                                <p class="text-light mb-2" >Your display name will be seen when you play games. Have fun with it!
+
+                                </p>
+                                <form name="signin" class="form">
+                                    <div class="input-control mb-2">
+                                        <input type="email" name="email"  class="input-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="input-control">
+                                       <button type="button" class="btn-secondary btn">Edit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="account-password" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="content-wrap">
+                                <h2 class="text-light mb-3">Account Password
+                                </h2>
+                                <p class="text-light mb-2" >Fill out the fields below to change your account password.  </p>
+                                <form name="signin" class="form">
+                                    <div class="input-control mb-4">
+                                        <input type="password" name="email"  class="input-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="input-control mb-2">
+                                        <input type="password" name="email"  class="input-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="input-control mb-2">
+                                        <input type="password" name="email"  class="input-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="input-control d-flex flex-row justify-content-start">
+                                        <button type="button" class="btn-secondary btn me-2">Cancel</button>
+                                        <button type="button" class="btn-secondary btn">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="content-wrap">
+                                <h2 class="text-light mb-3">Email </h2>
+                                <p class="text-light mb-2" >Your verified email address is used to send payment alerts, ID reminders, and login codes.
+
+                                </p>
+                                <form name="signin" class="form">
+                                    <div class="input-control mb-2">
+                                        <input type="email" name="email"  class="input-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="input-control">
+                                        <button type="button" class="btn-secondary btn">Edit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="phone" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="content-wrap">
+                                <h2 class="text-light mb-3">Phone Number
+                                </h2>
+                                <p class="text-light mb-2" >Your phone number may be used to send payment alerts, ID reminders, and login codes.
+
+                                </p>
+                                <form name="signin" class="form">
+                                    <div class="input-control mb-2">
+                                        <input type="email" name="email"  class="input-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="input-control">
+                                        <button type="button" class="btn-secondary btn">Edit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
                     </div>
+
+
                 </div>
             </div>
+
+<!--            <div class="col-md-4 col-lg-3 col">-->
+<!--                <nav class="accent rounded">-->
+<!--                    <p class="ps-3 pt-2 modalBackground&#45;&#45;text fs-18 font-weight-bold">Account</p>-->
+<!--                    <hr>-->
+<!--                    <ul class="nav nav-tabs list-group" id="myTab" role="tablist">-->
+<!--                        <li class="nav-item" role="presentation">-->
+<!--                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item" role="presentation">-->
+<!--                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item" role="presentation">-->
+<!--                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+
+
+<!--                </nav>-->
+<!--            </div>-->
+<!--            <div class="col-md-8 col-lg-9 col">-->
+<!--                <div class="tab-content h-100 bg-primary" id="myTabContent">-->
+<!--                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">asdf</div>-->
+<!--                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">jkl</div>-->
+<!--                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">mno</div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 

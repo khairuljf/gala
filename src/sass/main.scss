@@ -586,7 +586,7 @@ header {
     button.active {
       background: transparent;
       position: relative;
-      color: var(--v-accentBlue-base);
+      color: var(--v-accentBimagelue-base);
 
       &:before {
         position: absolute;
@@ -597,6 +597,27 @@ header {
         background: var(--v-accentBlue-base);
         left: 0;
       }
+    }
+  }
+
+
+
+  .form .input-control {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+
+  .profile-thumb{
+    ht: 250px;
+    width: 250px;
+    img{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
     }
   }
 }
