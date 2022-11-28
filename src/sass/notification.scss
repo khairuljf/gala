@@ -1,0 +1,40 @@
+.notifications{
+    ul{
+        padding-bottom: 12px;
+        border-bottom: 1px solid hsla(0,0%,100%,.12) !important;
+        li{
+            .active{
+                color: var(--v-textColor-base) !important;
+            }
+            a{
+                color: var(--v-accentBlue-base);
+                padding-top: 12px;
+                padding-bottom: 12px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: 1.25rem;
+                font-weight: 500;
+                letter-spacing: .0125em;
+                line-height: 2rem;
+                margin-right: 20px;
+                
+            }
+            .active{
+                color: var(--v-textColor-base) !important;
+                border-bottom: 3px solid var(--v-accentBlue-base);
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    .tab-content{
+        background-color: var(--v-accent-base);
+        padding: 16px;
+        color: var(--v-textColor-base) !important;
+        h3{
+            color: var(--v-textColor-base) !important;
+            text-align: center;
+        }
+    }
+}
