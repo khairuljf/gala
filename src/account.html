@@ -25,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item active">-->
+                    <li class="nav-item active">
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
                     </li>
@@ -72,7 +72,7 @@
 
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile-picture" type="button" role="tab" aria-controls="home" aria-selected="true">Profile Picture</button>
+                            <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#profile-picture" type="button" role="tab" aria-controls="home" aria-selected="true">Profile Picture</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="d-tab" data-bs-toggle="tab" data-bs-target="#display-name" type="button" role="tab" aria-controls="home" aria-selected="true">Display Name</button>
@@ -90,7 +90,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link " id="phon-number" data-bs-toggle="tab"
+                            <button class="nav-link " id="phon-number-tab" data-bs-toggle="tab"
                                     data-bs-target="#phon-number" type="button">
                                 Phone Number
                             </button>
@@ -101,7 +101,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link " id="linked-accounts" data-bs-toggle="tab"
+                            <button class="nav-link " id="linked-accounts-tab" data-bs-toggle="tab"
                                     data-bs-target="#linked-accounts" type="button">Linked Accounts
                             </button>
                         </li>
@@ -249,7 +249,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="phone" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="phon-number" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="content-wrap">
                                 <h2 class="text-light mb-3">Phone Number
                                 </h2>
@@ -264,6 +264,36 @@
                                         <button type="button" class="btn-secondary btn">Edit</button>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="linked-accounts" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="content-wrap">
+                                <h2 class="text-light mb-3">Linked Accounts
+                                </h2>
+                                <p class="text-light mb-2" >Discord </p>
+                                <div class="account-link p-2 d-flex justify-content-between rounded align-items-center mb-3" style="background: #1e1e1e">
+                                    <div class="solcial-info d-flex align-items-center">
+                                        <div class="social-thumb d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border-radius: 50%; background: #7289da;">
+                                            <img style="    width: 30px;
+    height: 30px;" src="https://app.gala.games/_nuxt/img/discord-empty-profile.41570f5.png" alt="">
+                                        </div>
+                                        <i data-v-5999dd0f="" aria-hidden="true" class="v-icon notranslate mr-3 mdi mdi-link-variant-off theme--dark" style="font-size: 30px; color: rgb(239, 76, 36); caret-color: rgb(239, 76, 36);"></i>
+                                        <p style="color: rgb(239, 76, 36);" class="mb-0 ms-3">Disconnected </p>
+                                    </div>
+                                    <button class="gala-btn px-7 ms-auto btn border-0 text-light">Connect Discord</button>
+                                </div>
+                                <p class="text-light mb-2" >Epic Games </p>
+                                <div class="account-link p-2 d-flex justify-content-between rounded align-items-center" style="background: #1e1e1e">
+                                    <div class="solcial-info d-flex align-items-center">
+                                        <div class="social-thumb d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border-radius: 50%; background: #313131;">
+                                            <img style="    width: 30px;
+    height: 30px;" src="https://app.gala.games/_nuxt/img/epic-games.2962eed.png" alt="">
+                                        </div>
+                                        <i data-v-5999dd0f="" aria-hidden="true" class="v-icon notranslate mr-3 mdi mdi-link-variant-off theme--dark" style="font-size: 30px; color: rgb(239, 76, 36); caret-color: rgb(239, 76, 36);"></i>
+                                        <p style="color: rgb(239, 76, 36);" class="mb-0 ms-3">Disconnected </p>
+                                    </div>
+                                    <button class="gala-btn px-7 ms-auto btn border-0 text-light">Connect Discord</button>
+                                </div>
                             </div>
                         </div>
 
