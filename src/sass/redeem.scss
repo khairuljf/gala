@@ -1,0 +1,38 @@
+.redeem{
+    img{
+        width: 100%;
+        max-width: 180px;
+    }
+    h2{
+        font-size: 24px;
+        color: var(--v-textColor-base);
+        font-weight: $font-weight-bold;
+    }
+    
+    input{
+        line-height: 20px;
+        padding: 18px 12px;
+        max-width: 100%;
+        min-width: 0;
+        width: 100%;
+        border: none;
+        background-color: hsla(0,0%,100%,.08);
+        color: var(--v-textColor-base);
+        border-radius: 8px;
+        &:focus{
+            outline: none;
+        }
+    }      
+    button{
+        color: var(--v-textColor-base);
+        height: 2.6em;
+        font-size: 20px;
+        padding: 0 24px;
+        font-weight: $font-weight-bold;
+        max-width: 196px;
+        width: 100%;
+    }
+    a{
+        color: var(--v-textColor-base);
+    }
+}
